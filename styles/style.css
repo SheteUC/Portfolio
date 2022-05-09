@@ -16,7 +16,7 @@ html, body {
 
 @media(max-width: 768px) {
     .whitespace {
-        display: none;
+          display: none;
     }
 }
 
@@ -38,12 +38,12 @@ html, body {
 }
 
 @keyframes typewriter {
-    from {
-        width: 0;
-    }
-    to {
-        width: 18em;
-    }
+from {
+    width: 0;
+}
+to {
+    width: 18em;
+}
 }
 
 @media(max-width: 768px) {
