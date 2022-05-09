@@ -16,7 +16,7 @@ html, body {
 
 @media(max-width: 768px) {
     .whitespace {
-          display: none;
+        display: none;
     }
 }
 
@@ -39,30 +39,30 @@ html, body {
 
 @keyframes typewriter {
     from {
-          width: 0;
+        width: 0;
     }
     to {
-          width: 18em;
+        width: 18em;
     }
 }
 
 @media(max-width: 768px) {
     @keyframes typewriter {
-          from {
-                width: 0;
-          }
-          to {
-                width: 17em;
-          }
+        from {
+            width: 0;
+        }
+        to {
+            width: 17em;
+        }
     }
 }
 
 @keyframes blinkTextCussor {
     from {
-          border-right-color: rgba(255, 255, 255, 0.75);
+        border-right-color: rgba(255, 255, 255, 0.75);
     }
     to {
-          border-right-color: transparent;
+        border-right-color: transparent;
     }
 }
 
@@ -371,16 +371,16 @@ h6 {
 
 @media(max-width: 768px) {
     .project {
-          width: 90% !important;
-          margin: 14px auto;
+        width: 90% !important;
+        margin: 14px auto;
     }
 
     .vertical {
-          display: none;
+        display: none;
     }
 
     .project1::after, .project2::after, .project3::after, .project4::after {
-          display: none;
+        display: none;
     }
 }
 
@@ -423,7 +423,7 @@ h6 {
     height: 4px;
     width: 4px;
     margin-right: 6px;
-    background: #3b5998;
+    background: #1187b6;
 }
 
 
@@ -434,7 +434,7 @@ h6 {
     height: 4px;
     width: 4px;
     margin-right: 6px;
-    background: #fcaf45;
+    background: #c4c71c;
 }
 
 
@@ -445,7 +445,7 @@ h6 {
     height: 4px;
     width: 4px;
     margin-right: 6px;
-    background: #55acee;
+    background: #40a142;
 }
 
 
@@ -456,7 +456,7 @@ h6 {
     height: 4px;
     width: 4px;
     margin-right: 6px;
-    background: #c4302b;
+    background: #d71313;
 }
 
 #media, #email {
@@ -473,7 +473,7 @@ h6 {
 
 @media(max-width: 768px) {
     .collab, #personal, #media, #address {
-          text-align: center;
+        text-align: center;
     }
 
     .info ul {
@@ -500,9 +500,9 @@ h6 {
 
 @media(max-width: 768px) {
     .hero-content {
-          padding-top: 50px;
-          width: 96%;
-          margin: 0 auto;
+        padding-top: 50px;
+        width: 96%;
+        margin: 0 auto;
     }
 }
 
@@ -585,8 +585,8 @@ textarea:focus {
 
 @media(max-width: 768px) {
     #contact-form {
-          margin: 5% -8%;
-          width: 98%;
+        margin: 5% -8%;
+        width: 98%;
     }
 }
 
