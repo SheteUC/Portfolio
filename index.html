@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="author" content="harrnish">
 
-      <title>Portfolio Website Template | CODEGRID</title>
+      <title>Portfolio Website</title>
+
+      <!-- inspired from CodeGrid - https://github.com/codegridweb/Minimal-Portfolio-Website.git --> 
 
       <!-- stylesheet -->
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="styles/style.css">
 
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -19,28 +20,28 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
       <!-- terminal effect -->
-      <script src="t.min.js"></script>
+      <script src="script/t.min.js"></script>
 
       <!-- for on scroll animations -->
-      <link rel="stylesheet" href="animate.css">
-      <script src="wow.min.js"></script>
+      <link rel="stylesheet" href="/styles/animate.css">
+      <script src="script/wow.min.js"></script>
 </head>
-<div>
-    <div class="website"></div>
+<body>
+    <div class="website">
         <!-- navigation bar -->
             <nav>
                 <!-- name -->
-                <span><a href="index.html">atharv</a></span>
+                <span id="brand"><a href="index.html">atharv</a></span>
 
                 <!-- menu bar -->
-                <ul class="menu">
-                    <li><a href="index.html">Home<span>.</span></a></li>
-                    <li><a href="projects.html">Projects<span>.</span></a></li>
-                    <li><a href="about.html">About<span>.</span></a></li>
-                    <li><a href="contact.html">Contact<span>.</span></a></li>
+                <ul id="menu">
+                    <li><a href="index.html"><span>(</span>home<span>)</span></a></li>
+                    <li><a href="work.html"><span>{</span>work<span>}</span></a></li>
+                    <li><a href="about.html"><span>[</span>about me<span>]</span></a></li>
+                    <li><a href="contact.html"><span><</span>contact<span>></span></a></li>
                 </ul>
 
-                <div class="toggle">
+                <div id="toggle">
                     <div class="span">menu</div>
                 </div>
 
@@ -52,25 +53,25 @@
                 <div class="close-btn">close</div>
 
                 <ul id="menu">
-                    <li><a href="index.html">home<span>.</span></a></li>
-                    <li><a href="work.html">work<span>.</span></a></li>
-                    <li><a href="about.html">about me<span>.</span></a></li>
-                    <li><a href="contact.html">contact<span>.</span></a></li>
+                    <li><a href="index.html"><span>#</span>home</a></li>
+                    <li><a href="work.html"><span>#</span>work</a></li>
+                    <li><a href="about.html"><span>#</span>about me</a></li>
+                    <li><a href="contact.html"><span>#</span>contact</a></li>
                 </ul>
 
             </div>
         
         <!-- opening line -->
-            <div class="opening">
+            <div class="hero">
                 <div class="header">
-                      <h1 class="line anim-typewriter">I love minimalsim.</h1>
+                      <h1 class="line anim-typewriter">Greatings!</h1>
                 </div>
             </div>
 
             <div class="scroll-down"></div>
 
         <!-- projects -->
-            <div class="projects">
+            <div class="container-fluid">
                 <br><br><br>
 
                 <h6>My projects</h6>
@@ -120,7 +121,7 @@
         
         <!-- footer -->
             <div class="footer">
-                <div class="footer-content">
+                <div class="container">
                     <br><br>
 
                     <!-- small phrase -->
@@ -156,10 +157,10 @@
                                 <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
 
                                 <ul>
-                                    <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">tw</li>
-                                    <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">fb</li>
-                                    <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">ds</li>
-                                    <li id="yt" class="wow fadeInUp" data-wow-delay="1s">gt</li>
+                                    <li id="tw" class="wow fadeInUp" data-wow-delay="0.4s">tw</li>
+                                    <li id="fb" class="wow fadeInUp" data-wow-delay="0.6s">fb</li>
+                                    <li id="ds" class="wow fadeInUp" data-wow-delay="0.8s">ds</li>
+                                    <li id="gt" class="wow fadeInUp" data-wow-delay="1s">gt</li>
                                 </ul>
 
                                 <br><br>
@@ -171,12 +172,14 @@
                                 <h4 class="wow fadeInUp" data-wow-delay="0.2s">sheteaa@mail.uc.edu</h4>
                                 <br><br>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <br><br>
+    </div>
+    </body>
         
         <!-- script plugin -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -184,21 +187,22 @@
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script type="text/javascript">
 
+        // navigation starts here
+
         $("#toggle").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
+                $(this).toggleClass('on');
+                $("#resize").toggleClass("active");
         });
 
         $("#resize ul li a").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
+                $(this).toggleClass('on');
+                $("#resize").toggleClass("active");
         });
 
         $(".close-btn").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
+                $(this).toggleClass('on');
+                $("#resize").toggleClass("active");
         });
-
         // navigation animation
 
         TweenMax.from("#brand", 1, {
@@ -215,7 +219,7 @@
         }, 0.1);
 
         new WOW().init();
-        
+    
     </script>
     
 </body>
