@@ -410,80 +410,53 @@ h6 {
     font-weight: lighter;
 }
 
-.info li {
-    font-weight: bold;
+.info a{
+    font-weight: lighter;
     color: #fff;
     font-size: 20px;
     padding-left: 20px;
 }
+#personal i{
+    font-weight: lighter;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 10px;
+}
 
-.info a, #personal a{
+#personal a{
+    font-weight: lighter;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.info i, #personal a{
     text-decoration: none;
     color: #ffffff;
 }
 
-
-#tw::before {
+#media i{
     display: inline-block;
     content: '';
-    border-radius: 100%;
     height: 4px;
     width: 4px;
-    margin-right: 6px;
-    background: #1187b6;
+    padding: 20px;
+    position: relative;
+    top: -20px;
 }
 
-
-#fb::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #c4c71c;
-}
-
-
-#ds::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #40a142;
-}
-
-
-#gt::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #d71313;
-}
 
 #media, #email {
     text-align: right;
 }
 
-#media ul {
-    list-style: none;
-}
-
-#media ul li {
-    display: inline-block;
-}
 
 @media(max-width: 768px) {
     .collab, #personal, #media, #address {
         text-align: center;
     }
 
-    .info ul {
+    .info {
         margin: 0 0 0 -22px;
         padding: 0;
     }
