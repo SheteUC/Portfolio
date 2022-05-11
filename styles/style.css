@@ -227,6 +227,7 @@ nav #menu li a:hover {
     }
 }
 
+/*--------------- hero section --------------- */
 .hero {
     height: 100vh;
     display: flex;
@@ -480,9 +481,9 @@ h6 {
 
 @media(max-width: 768px) {
     .hero-content {
-        padding-top: 50px;
-        width: 96%;
-        margin: 0 auto;
+          padding-top: 50px;
+          width: 96%;
+          margin: 0 auto;
     }
 }
 
@@ -498,7 +499,6 @@ h6 {
 }
 
 /*--------------- contact form --------------- */
-
 #contact-form {
     margin: 5% 1.4%;
 }
@@ -565,10 +565,11 @@ textarea:focus {
 
 @media(max-width: 768px) {
     #contact-form {
-        margin: 5% -8%;
-        width: 98%;
+          margin: 5% -8%;
+          width: 98%;
     }
 }
+
 
 /*--------------- project page --------------- */
 
