@@ -386,7 +386,7 @@ h6 {
 }
 
 .carousel-cell {
-    width: 40%;
+    width: 0%;
     margin-right: 10px;
     border-radius: 5px;
 }
@@ -510,10 +510,20 @@ h6 {
 } */
 
 /*--------------- contact form --------------- */
-#contact-form {
-    margin: 5% 1.4% 0 10%;
+.submission{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
-
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+}
 #contact-form ul {
     list-style: none;
     border-radius: 5px;
@@ -576,8 +586,8 @@ textarea:focus {
 
 @media(max-width: 768px) {
     #contact-form {
-          margin: 5% -8%;
-          width: 98%;
+        margin: 5% -8%;
+        width: 98%;
     }
 }
 
