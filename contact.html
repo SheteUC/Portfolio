@@ -71,12 +71,12 @@
                                           </div>
                                           <br>
                                           <div class="para">
-                                                <span><p class="wow fadeInUp" data-wow-delay="1.2s">Hi there!</p></span>
+                                                <span><p class="wow fadeInUp" data-wow-delay="1.2s">Thank you for visiting my webpage! Please use this form to contact me or to provide recommendations.</p></span>
                                           </div>
                                           <div class="app-contact"></div>
                                     </div>
                                     <div class="screen-body-item">
-                                          <form name="contact-form" id="contact-form" method="post" onsubmit="sendEmail(); reset(); return false;">
+                                          <form name="contact-form" id="contact-form" method="post" action="">
 
                                                 <ul>
                         
@@ -219,21 +219,6 @@
 
 
       </script>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-            function sendEmail(){
-                  Email.send({
-                        Host : "smtp.yourisp.com",
-                        Username : "username",
-                        Password : "password",
-                        To : 'them@website.com',
-                        From : "you@isp.com",
-                        Subject : "This is the subject",
-                        Body : "And this is the body"
-                  }).then(
-                        message => alert(message)
-                  );
-            }
-      </script>
+      
 </body>
 </html>
