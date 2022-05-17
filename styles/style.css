@@ -398,11 +398,15 @@ h6 {
     border-radius: 1%;
 }
 
+.robot-link, .robot-link:hover, .robot-link:focus, .robot-link:active{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /*--------------- footer section --------------- */
 .collab {
     text-align: right;
-
 }
 
 .collab p {
